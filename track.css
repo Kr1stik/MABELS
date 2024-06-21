@@ -1,0 +1,181 @@
+/* Basic Reset */
+body, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+}
+
+#sidebar_menu {
+    background-color: #FF7F8A;
+    padding: 1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: calc(100vh - 2em);
+    position: fixed;
+    height: 100%;
+    width: 260px; /* Sidebar width */
+}
+
+#sidebar_menu h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#sidebar_menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar_menu a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 260px; /* Adjust based on sidebar width */
+    display: flex;
+    gap: 20px;
+    width: calc(100% - 260px); /* Adjust based on sidebar width */
+    overflow-y: auto;
+}
+
+.orders-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orders-section h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.orders-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.order-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Increased padding */
+    width: 350px; /* Increased width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.order-items {
+    margin-top: 10px;
+}
+
+.update-status-button {
+    margin-top: 10px;
+    padding: 10px 20px; /* Increased padding */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-status-button:hover {
+    background-color: #0056b3;
+}
+
+.completed {
+    background-color: #e6f7e9; /* Light green */
+}
+
+.minimalist-textbox {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Increased padding */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.minimalist-textbox textarea {
+    width: calc(100% - 40px); /* Adjusted width for increased padding */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.minimalist-textbox button {
+    padding: 10px 20px; /* Increased padding */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.minimalist-textbox button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove bullets from items list */
+.order-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.order-details li {
+    padding: 10px; /* Increased padding */
+    font-size: 16px; /* Increased font size */
+}
+
+/* Order details styling */
+.order-details p,
+.order-details h4 {
+    font-size: 18px; /* Increased font size for details */
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.order-details .status {
+    font-weight: bold;
+}
+
+/* Add this to your existing CSS file */
+
+.remove-button {
+    padding: 8px 16px;
+    background-color: #FF4D4F; /* Light red background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Slightly smaller font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-left: 270px;
+}
+
+.remove-button:hover {
+    background-color: #D9363E; /* Slightly darker red on hover */
+}

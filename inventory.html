@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabels Inventory</title>
+    <link rel="icon" type="image/x-icon" href="tmp_f8524e26-0b01-4f2c-a11f-c6254dde549f.png">
+    <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+    <!-- Sidebar for Navigation -->
+    <div class="sidebar">
+        <h2>Inventory</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Mabels</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="content-container">
+            <!-- Section to Add New Items -->
+            <section id="add-section">
+                <h2>Add New Category and Menu Item</h2>
+                <form id="menu-form">
+                    <div class="form-group">
+                        <label for="item-category">Menu Category</label>
+                        <input type="text" id="item-category" name="item-category" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-name">Menu Name</label>
+                        <input type="text" id="item-name" name="item-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-price">Menu Price</label>
+                        <input type="number" id="item-price" name="item-price" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-quantity">Menu Quantity</label>
+                        <input type="number" id="item-quantity" name="item-quantity" required>
+                    </div>
+                    <button type="submit" id="submit-button">Add Menu</button>
+                </form>
+            </section>
+            
+            <!-- Section to Display Inventory -->
+            <section id="display-section" class="scrollable">
+                <h2>Categories and Menu Items</h2>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search for items...">
+                    <button id="search-button">Search</button>
+                </div>
+                <div id="inventory-list">
+                    <!-- Inventory items will be dynamically inserted here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="inventory.js"></script>
+</body>
+</html>
